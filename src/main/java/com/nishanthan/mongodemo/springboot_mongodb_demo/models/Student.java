@@ -11,10 +11,12 @@ import com.nishanthan.mongodemo.springboot_mongodb_demo.enums.Gender;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 @Data
 @Document
 @AllArgsConstructor
+@NoArgsConstructor
 public class Student {
     @Id
     private String id;
