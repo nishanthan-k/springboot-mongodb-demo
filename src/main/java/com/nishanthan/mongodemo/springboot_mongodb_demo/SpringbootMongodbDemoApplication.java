@@ -28,9 +28,9 @@ public class SpringbootMongodbDemoApplication {
 
 			// Create a Student object with proper values
 			Student s = new Student(
-					"Temp",
-					"Temp",
-					"Temp",
+					"First name",
+					"Last name changed",
+					"Temp Email has changed",
 					Gender.MALE,
 					address,
 					new BigDecimal("100.00"), // Replace with the actual value
