@@ -1,6 +1,7 @@
 package com.nishanthan.mongodemo.springboot_mongodb_demo.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.stereotype.Service;
 
@@ -18,5 +19,9 @@ public class StudentService {
 
     public List<Student> getAllStudents() {
         return studentRepo.findAll();
+    }
+
+    public Optional<Student> getStudent(String id) {
+        return studentRepo.findById(id);
     }
 }
